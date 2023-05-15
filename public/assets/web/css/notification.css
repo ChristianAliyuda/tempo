@@ -1,0 +1,47 @@
+@import "./style.css";
+
+main {
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.notification {
+  padding: 0.8rem;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: -4px 5px 6px grey;
+  border-radius: 0.2rem;
+  border: 1px solid #c47300;
+}
+
+.active {
+  border-left: 8px solid #c47300;
+}
+
+.notification p {
+  font-size: 1.2rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+  .notification {
+    padding: 0.7rem;
+  }
+  .notification p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .notification {
+    padding: 0.5rem;
+  }
+  .notification p {
+    font-size: 1rem;
+  }
+}

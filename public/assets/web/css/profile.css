@@ -1,0 +1,85 @@
+@import "style.css";
+.p_content {
+    margin-block: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+form .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row label {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.row img {
+    width: 30%;
+    border-radius: 50%;
+    margin-right: 4rem;
+}
+
+.row input,
+textarea {
+    font-size: 1rem;
+    outline: none;
+    padding: 0.5rem;
+    outline: none;
+    border: 2px solid #c47300;
+}
+
+.row textarea {
+    padding: 0.6rem;
+}
+
+form button {
+    padding: 0.6rem 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 980px) {
+    form {
+        width: 22rem;
+    }
+    .row label {
+        font-size: 1.2rem;
+    }
+    .row input,
+    textarea {
+        font-size: 1.1rem;
+        padding: 0.3rem;
+    }
+    .row img {
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        width: 20rem;
+    }
+    .row label {
+        font-size: 1rem;
+    }
+    .row input,
+    textarea {
+        font-size: 1rem;
+        padding: 0.2rem;
+    }
+}

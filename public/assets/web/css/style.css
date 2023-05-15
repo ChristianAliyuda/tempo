@@ -1,0 +1,583 @@
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@500;700&display=swap");
+        /* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+        
+        *,
+        *::after,
+        *::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .overlay {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 8;
+        }
+        
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #dbe1e4
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            padding: 0;
+            margin: 0;
+            line-height: 1.1;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            width: 85%;
+            margin-inline: auto;
+        }
+        
+        .main_heading {
+            font-size: 3.5rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+        }
+        
+        .sub_heading {
+            font-size: 2.5rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+        }
+        
+        header {
+            width: 100%;
+        }
+        
+        nav {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-block: 1.5rem;
+        }
+        
+        .links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .links li a {
+            font-size: 1.2rem;
+            font-weight: bold;
+            animation: all 0.5ms ease;
+        }
+        
+        .links li a:hover {
+            color: #c47300;
+        }
+        
+        .logo {
+            width: 20rem;
+            margin-bottom: 15px;
+        }
+        
+        .alertHide {
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            outline: none;
+            width: fit-content;
+            gap: 2rem;
+            border: none;
+            color: #ffff;
+            background-color: black;
+            cursor: pointer;
+        }
+        
+        .logo img {
+            width: 100%;
+        }
+        
+        .links li i {
+            font-size: 1.2rem;
+            cursor: pointer;
+            animation: all 0.5ms ease;
+        }
+        
+        .links li i:hover {
+            color: #c47300;
+        }
+        
+        marquee {
+            position: absolute;
+            bottom: 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20rem;
+        }
+        
+        marquee h1 {
+            font-size: 2rem;
+            color: #c47300;
+        }
+        
+        .btns {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            gap: 0.5rem;
+        }
+        
+        .alertverify {
+            position: absolute;
+            top: 150px;
+            left: 0;
+            width: 100%;
+            height: 15rem;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .alert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15rem;
+            gap: 2rem;
+            background-color: #c47300;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .showBonusCollectAlert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            height: 15rem;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .showCollectAlert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            height: 15rem;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .message1alert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            height: 15rem;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .showLevel15Alert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            height: 15rem;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .message2alert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15rem;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .showalreadyAlert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15rem;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .showwithdrawAlert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15rem;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .already {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15rem;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .showtodaywithdrawAlert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15rem;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .message3alert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            height: 15rem;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .message4alert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15rem;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .messagelevelalert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            height: 15rem;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .showbonusmessageAlert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15rem;
+            align-items: center;
+            flex-direction: column;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .showbonusmessageAlert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .msalert {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15rem;
+            align-items: center;
+            flex-direction: column;
+            background-color: #c47300;
+            opacity: 0.8;
+            border-radius: 0 0 50% 50%;
+            z-index: 10;
+        }
+        
+        .alertverify p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .alert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .message1alert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .message2alert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .message3alert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .showBonusCollectAlert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .message4alert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .messagelevelalert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .showalreadyAlert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .showCollectAlert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .msalert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .showwithdrawAlert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .showLevel15Alert p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .btn {
+            font-size: 1.5rem;
+            color: #ffff;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            background-color: #c47300;
+            cursor: pointer;
+            text-transform: uppercase;
+            border: none;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        
+        .a btn {
+            font-size: 1.5rem;
+            color: #ffff;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            background-color: #c47300;
+            cursor: pointer;
+            text-transform: uppercase;
+            border: none;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        
+        .btns button.btn {
+            flex: 1;
+            padding-block: 1.5rem;
+        }
+        
+        .btns a.btn {
+            flex: 1;
+            padding-block: 1.5rem;
+        }
+        
+        .content {
+            text-align: center;
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .content button {
+            width: 140px;
+            padding-block: 10px;
+        }
+        
+        .content a {
+            width: 140px;
+            padding-block: 10px;
+        }
+        /* Media Queries */
+        
+        @media screen and (max-width: 980px) {
+            .main_heading {
+                font-size: 3.2rem;
+            }
+            .sub_heading {
+                font-size: 2.2rem;
+            }
+            a.btn {
+                font-size: 1.2rem;
+            }
+            .btns a.btn {
+                padding-block: 1.2rem;
+            }
+            .content img {
+                width: 60%;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 97%;
+            }
+            nav {
+                padding-block: 0.5rem;
+            }
+            .links li a {
+                font-size: 1rem;
+            }
+            .links li i {
+                font-size: 1rem;
+            }
+            .main_heading {
+                font-size: 2.5rem;
+            }
+            .sub_heading {
+                font-size: 2rem;
+            }
+            marquee {
+                width: 15rem;
+            }
+            .btns {
+                gap: 0.1rem;
+            }
+            a.btn {
+                font-size: 1.1rem;
+            }
+            a.btnss {
+                font-size: 1.5rem;
+                color: #ffff;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                background-color: #c47300;
+                cursor: pointer;
+                text-transform: uppercase;
+                border: none;
+                border-bottom-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+            }
+            /* .content img {
+    width: 60%;
+  } */
+        }

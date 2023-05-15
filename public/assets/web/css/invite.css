@@ -1,0 +1,56 @@
+@import "style.css";
+.i_content {
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.upper_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.upper_content img {
+    width: 9rem;
+    border-radius: 50%;
+}
+
+.lower_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.lower_content a {
+    width: 140px;
+    padding-block: 14px;
+}
+
+@media screen and (max-width: 980px) {
+    .upper_content img {
+        width: 8rem;
+    }
+    .lower_content a {
+        width: 120px;
+        padding-block: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .upper_content img {
+        width: 7rem;
+    }
+    .lower_content a {
+        width: 140px;
+        padding-block: 14px;
+    }
+}

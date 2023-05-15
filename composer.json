@@ -1,0 +1,20 @@
+{
+    "name": "talha/php",
+    "authors": [
+        {
+            "name": "Talha Tahir",
+            "email": "talhabhatti0257@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2",
+		 "phpmailer/phpmailer": "^6.2",
+		"rbdwllr/reallysimplejwt": "^2.1",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "./app"
+        }
+    }
+}

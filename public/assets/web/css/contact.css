@@ -1,0 +1,63 @@
+@import "./style.css";
+main {
+    margin-block: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.desc {
+    border: 5px solid #c47300;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    color: #C47300;
+    margin-inline: 8rem;
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.contact {
+    width: 100%;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact button {
+    padding: 0.5rem 1rem 1rem;
+}
+
+@media screen and (max-width: 980px) {
+    .contact {
+        justify-content: center;
+        gap: 4rem;
+    }
+    .desc {
+        padding: 0.8rem;
+        font-size: 1.1rem;
+        margin-inline: 3rem;
+        color: #C47300;
+    }
+    .contact button {
+        padding: 0.5rem 1rem 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+        justify-content: center;
+        gap: 4rem;
+    }
+    .desc {
+        padding: 0.7rem;
+        margin-inline: 0;
+        color: #C47300;
+        font-size: 1.05rem;
+    }
+    .contact button {
+        padding: 0.5rem 0.8rem 0.8rem;
+    }
+}

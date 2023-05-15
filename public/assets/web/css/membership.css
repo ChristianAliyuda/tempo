@@ -1,0 +1,110 @@
+@import "./style.css";
+section {
+    margin-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    color: #c47300;
+}
+
+.detail h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.detail h2 {
+    font-size: 1.7rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #c47300;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+form div label {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+form div input {
+    font-size: 1.3rem;
+    padding: 0.4rem;
+    outline: none;
+}
+
+form button {
+    padding: 0.4rem 0.8rem 1.1rem;
+}
+
+@media screen and (max-width: 980px) {
+    .detail h1 {
+        font-size: 1.8rem;
+    }
+    .detail h2 {
+        font-size: 1.5rem;
+    }
+    form div {
+        padding: 0.8rem;
+    }
+    form div label {
+        font-size: 1.2rem;
+    }
+    form div input {
+        font-size: 1.2rem;
+        padding: 0.3rem;
+    }
+    form button {
+        padding: 0.4rem 0.8rem 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .detail {
+        gap: 1.2rem;
+    }
+    .detail h1 {
+        font-size: 1.5rem;
+    }
+    .detail h2 {
+        font-size: 1.3rem;
+    }
+    form div {
+        padding: 0.6rem;
+    }
+    form div label {
+        font-size: 1.1rem;
+    }
+    form div input {
+        font-size: 1.1rem;
+    }
+    form button {
+        padding: 0.4rem 0.8rem 0.8rem;
+    }
+}

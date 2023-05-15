@@ -1,0 +1,90 @@
+@import "./style.css";
+main {
+    margin-block: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main form {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+form h2 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+form input {
+    width: 20rem;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+    border: 2px solid rgb(133, 133, 133);
+}
+
+form select {
+    width: 20rem;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+    border: 2px solid rgb(133, 133, 133);
+}
+
+form a {
+    padding: 0.4rem 1rem 1rem;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+    form input {
+        width: 17rem;
+        font-size: 1.1rem;
+        border: 2px solid #c47300;
+    }
+    form button {
+        padding: 0.4rem 1rem 0.8rem;
+        background-color: #c47300;
+    }
+    form select {
+        width: 17rem;
+        font-size: 1.1rem;
+        border: 2px solid #c47300;
+    }
+    form option {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main form {
+        width: 20rem;
+    }
+    form input {
+        width: 15rem;
+        font-size: 1.1rem;
+    }
+    form select {
+        width: 15rem;
+        font-size: 1.1rem;
+    }
+    form option {
+        font-size: 1.1rem;
+    }
+    form button {
+        padding: 0.4rem 1rem 0.7rem;
+        background-color: #c47300;
+    }
+}

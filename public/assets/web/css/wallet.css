@@ -1,0 +1,99 @@
+@import "style.css";
+main {
+    margin-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+main>div {
+    display: flex;
+    width: 100%;
+}
+
+main>div>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    text-align: center;
+}
+
+main>div>div>button {
+    user-select: none;
+    padding: 0.5rem 1rem 1.5rem;
+}
+
+.balance h1,
+.balance h2 {
+    color: #c47300;
+}
+
+table {
+    width: 50%;
+}
+
+table th {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+table td {
+    font-size: 1.2rem;
+}
+
+table,
+th,
+td {
+    border: 4px solid #c47300;
+    border-collapse: collapse;
+}
+
+@media screen and (max-width: 980px) {
+    table {
+        width: 90%;
+    }
+    table th,
+    table th {
+        font-size: 1.3rem;
+    }
+    table td {
+        font-size: 1.1rem;
+    }
+    main>div>div>a {
+        padding: 0.5rem 1rem 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main>div {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+    main .balance {
+        align-items: flex-start;
+    }
+    main .withdraw {
+        align-items: flex-end;
+    }
+    table {
+        width: 100%;
+    }
+    table th,
+    table th {
+        font-size: 1.15rem;
+    }
+    table td {
+        font-size: 1rem;
+    }
+    main>div>div>a {
+        padding: 0.5rem 1rem 1rem;
+    }
+}
